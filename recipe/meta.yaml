@@ -9,7 +9,7 @@ source:
   md5: bb53fd06f7ebb74589e9dd684b1b66a6
 
 build:
-  number: 0
+  number: 1
   skip: true     # [win]
 
 requirements:
@@ -36,3 +36,4 @@ about:
 extra:
   recipe-maintainers:
     - 183amir
+    - tbeu
