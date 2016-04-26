@@ -9,17 +9,17 @@ source:
   md5: bb53fd06f7ebb74589e9dd684b1b66a6
 
 build:
-  number: 1
+  number: 2
   skip: true     # [win]
 
 requirements:
   build:
-    - hdf5
-    - zlib
+    - hdf5 1.8.15*
+    - zlib 1.2*
 
   run:
-    - hdf5
-    - zlib
+    - hdf5 1.8.15*
+    - zlib 1.2*
 
 test:
   commands:
