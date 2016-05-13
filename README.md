@@ -5,7 +5,7 @@ Home: https://sourceforge.net/projects/matio
 
 Package license: BSD 2-Clause
 
-Feedstock license: BSD
+Feedstock license: BSD 3-Clause
 
 Summary: A C library for reading and writing MATLAB MAT files.
 
@@ -69,6 +69,7 @@ Terminology
 
 Current build status
 ====================
+
 Linux: [![Circle CI](https://circleci.com/gh/conda-forge/libmatio-feedstock.svg?style=svg)](https://circleci.com/gh/conda-forge/libmatio-feedstock)
 OSX: [![TravisCI](https://travis-ci.org/conda-forge/libmatio-feedstock.svg?branch=master)](https://travis-ci.org/conda-forge/libmatio-feedstock) 
 Windows: [![AppVeyor](https://ci.appveyor.com/api/projects/status/github/conda-forge/libmatio-feedstock?svg=True)](https://ci.appveyor.com/project/conda-forge/libmatio-feedstock/branch/master)
