@@ -6,8 +6,14 @@ if "%ARCH%" == "32" (
   set SLN_PLAT=x64
 )
 
-set TOOLSET=v140
-set SLN_FILE="visual_studio\matio.sln"
+if "%VS_YEAR%" == "2015" (
+  set TOOLSET=v140
+  set SLN_FILE="visual_studio\matio.sln"
+)
+if "%VS_YEAR%" == "" (
+  echo Unknown VS version
+  exit 1
+)
 
 echo %LIBRARY_PREFIX%
 
