@@ -6,7 +6,7 @@ package:
 source:
   fn: matio-{{ version }}.tar.gz
   url: https://github.com/tbeu/matio/releases/download/v{{ version }}/matio-{{ version }}.tar.gz
-  md5: bb53fd06f7ebb74589e9dd684b1b66a6
+  md5: a79cf9d1200f37e0466062c3ce396d6b
 
 build:
   number: 0
