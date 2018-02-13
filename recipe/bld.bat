@@ -30,4 +30,7 @@ copy %SRC_DIR%\visual_studio\%SLN_PLAT%\Release\libmatio.dll %LIBRARY_BIN%\
 if errorlevel 1 exit 1
 copy %SRC_DIR%\visual_studio\%SLN_PLAT%\Release\libmatio.lib %LIBRARY_LIB%\
 if errorlevel 1 exit 1
-
+copy %SRC_DIR%\src\matio.h %LIBRARY_INC%\
+if errorlevel 1 exit 1
+copy %SRC_DIR%\visual_studio\matio_pubconf.h %LIBRARY_INC%\
+if errorlevel 1 exit 1
