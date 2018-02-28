@@ -2,6 +2,7 @@
 
 ./configure \
   --enable-mat73 \
+  --with-pic \
   --enable-extended-sparse \
   --prefix="${PREFIX}" \
   --with-zlib="${PREFIX}" \
