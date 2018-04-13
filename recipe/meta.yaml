@@ -40,8 +40,6 @@ test:
     - if not exist %PREFIX%\Library\bin\libmatio.dll exit 1  # [win]
     - if not exist %PREFIX%\Library\lib\libmatio.lib exit 1  # [win]
     - if not exist %PREFIX%\Library\include\matio.h exit 1  # [win]
-    - lib /list  %PREFIX%\Library\lib\libmatio.lib # [win]
-    - [[ -z $(xxxx | grep libmatio.dll)]] # [win]
 
 
 about:
