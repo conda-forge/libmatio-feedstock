@@ -34,3 +34,6 @@ copy %SRC_DIR%\src\matio.h %LIBRARY_INC%\
 if errorlevel 1 exit 1
 copy %SRC_DIR%\visual_studio\matio_pubconf.h %LIBRARY_INC%\
 if errorlevel 1 exit 1
+
+:: XX
+lib /list %LIBRARY_LIB%\libmatio.lib
