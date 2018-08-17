@@ -7,9 +7,11 @@ source:
   fn: matio-{{ version }}.tar.gz
   url: https://github.com/tbeu/matio/releases/download/v{{ version }}/matio-{{ version }}.tar.gz
   md5: 2968b5a95f05fab8b79ec87f9a6c0cac
+  patches:
+    - 0001-hotfix-backport-from-92.patch  # [linux]
 
 build:
-  number: 0
+  number: 1
   skip: true  # [win and (py27 or win32)]
   features:
     - vc9   # [win and py27]
