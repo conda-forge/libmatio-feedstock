@@ -9,7 +9,7 @@ source:
   md5: 2968b5a95f05fab8b79ec87f9a6c0cac
 
 build:
-  number: 0
+  number: 1
   skip: true  # [win and (py27 or win32)]
   features:
     - vc9   # [win and py27]
@@ -40,7 +40,7 @@ test:
     - if not exist %PREFIX%\Library\bin\libmatio.dll exit 1  # [win]
     - if not exist %PREFIX%\Library\lib\libmatio.lib exit 1  # [win]
     - if not exist %PREFIX%\Library\include\matio.h exit 1  # [win]
-    - set xx=lib /list libmatio.lib # [win] 
+    - set xx=lib /list libmatio.lib  # [win] 
 
 about:
   home: https://sourceforge.net/projects/matio
