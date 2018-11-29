@@ -11,7 +11,7 @@ source:
     - 0001-hotfix-backport-from-92.patch  # [linux]
 
 build:
-  number: 1
+  number: 1001
   skip: true  # [win and (py27 or win32)]
   features:
     - vc9   # [win and py27]
