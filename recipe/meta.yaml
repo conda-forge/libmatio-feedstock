@@ -12,26 +12,17 @@ source:
 
 build:
   number: 1001
-  skip: true  # [win and (py27 or win32)]
-  features:
-    - vc9   # [win and py27]
-    - vc10  # [win and py34]
-    - vc14  # [win and py>=35]
+  skip: true  # [win and (vc<14 or win32)]
 
 requirements:
   build:
-    - hdf5 1.8.18|1.8.18.*
-    - zlib 1.2.*
-    - python  # [win]
-    - vc 9   # [win and py27]
-    - vc 10  # [win and py34]
-    - vc 14  # [win and py>=35]
+    - {{ compiler('c') }}
+  host:
+    - hdf5
+    - zlib
   run:
-    - hdf5 1.8.18|1.8.18.*
-    - zlib 1.2.*
-    - vc 9   # [win and py27]
-    - vc 10  # [win and py34]
-    - vc 14  # [win and py>=35]
+    - hdf5
+    - zlib
 
 test:
   commands:
