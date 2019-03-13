@@ -8,7 +8,7 @@ source:
   url: https://github.com/tbeu/matio/releases/download/v{{ version }}/matio-{{ version }}.tar.gz
   md5: 9bcf119f549b652ee1e1183586fc3471
   patches:
-    - 0001-hotfix-backport-from-92.patch  # [linux]
+    # - 0001-hotfix-backport-from-92.patch  # [linux]
 
 build:
   number: 0
