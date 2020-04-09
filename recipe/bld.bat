@@ -6,8 +6,8 @@ if "%ARCH%" == "32" (
   set SLN_PLAT=x64
 )
 
-if "%VS_YEAR%" == "2015" (
-  set TOOLSET=v140
+if "%VS_YEAR%" == "2017" (
+  set TOOLSET=v141
   set SLN_FILE="visual_studio\matio.sln"
 )
 if "%VS_YEAR%" == "" (
