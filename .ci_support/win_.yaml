@@ -5,9 +5,11 @@ channel_sources:
 channel_targets:
 - conda-forge main
 hdf5:
-- 1.10.5
+- 1.10.6
 pin_run_as_build:
   zlib:
     max_pin: x.x
+vc:
+- '14'
 zlib:
 - '1.2'
