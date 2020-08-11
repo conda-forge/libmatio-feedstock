@@ -1,4 +1,4 @@
-{% set version = "1.5.12" %}
+{% set version = "1.5.17" %}
 package:
   name: libmatio
   version: {{ version }}
@@ -6,12 +6,12 @@ package:
 source:
   fn: matio-{{ version }}.tar.gz
   url: https://github.com/tbeu/matio/releases/download/v{{ version }}/matio-{{ version }}.tar.gz
-  md5: 2968b5a95f05fab8b79ec87f9a6c0cac
+  md5: 170075cce5c144e19f610af9b64cb63b
   patches:
     - 0001-hotfix-backport-from-92.patch  # [linux]
 
 build:
-  number: 1004
+  number: 0
   skip: true  # [win and (vc<14 or win32)]
 
 requirements:
