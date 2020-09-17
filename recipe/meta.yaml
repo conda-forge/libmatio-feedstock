@@ -1,4 +1,4 @@
-{% set version = "1.5.17" %}
+{% set version = "1.5.18" %}
 package:
   name: libmatio
   version: {{ version }}
@@ -6,7 +6,7 @@ package:
 source:
   fn: matio-{{ version }}.tar.gz
   url: https://github.com/tbeu/matio/releases/download/v{{ version }}/matio-{{ version }}.tar.gz
-  md5: 170075cce5c144e19f610af9b64cb63b
+  md5: 79d7766d9d0d37a874be6ff7abf87fde
 
 build:
   number: 0
