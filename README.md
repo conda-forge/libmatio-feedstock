@@ -5,11 +5,9 @@ Home: https://sourceforge.net/projects/matio
 
 Package license: BSD-2-Clause
 
-Feedstock license: BSD-3-Clause
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/libmatio-feedstock/blob/master/LICENSE.txt)
 
 Summary: A C library for reading and writing MATLAB MAT files.
-
-
 
 Current build status
 ====================
