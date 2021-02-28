@@ -1,6 +1,7 @@
+{% set name = "libmatio" %}
 {% set version = "1.5.19" %}
 package:
-  name: libmatio
+  name: {{ name }}
   version: {{ version }}
 
 source:
