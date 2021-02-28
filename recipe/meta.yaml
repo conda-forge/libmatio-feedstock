@@ -9,8 +9,10 @@ source:
   md5: a77c630fca481f4f533930d406bd9701
 
 build:
-  number: 0
+  number: 1
   skip: true  # [win and (vc<14 or win32)]
+  run_exports:
+    - {{ pin_subpackage(name, max_pin='x.x.x') }}
 
 requirements:
   build:
