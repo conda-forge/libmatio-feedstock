@@ -149,4 +149,5 @@ Feedstock Maintainers
 
 * [@183amir](https://github.com/183amir/)
 * [@tbeu](https://github.com/tbeu/)
+* [@traversaro](https://github.com/traversaro/)
 
