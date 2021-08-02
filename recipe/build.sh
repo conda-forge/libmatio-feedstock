@@ -11,11 +11,11 @@ cp $BUILD_PREFIX/share/gnuconfig/config.* ./config
   --with-hdf5="${PREFIX}"
 make
 
+if [[ "${CONDA_BUILD_CROSS_COMPILATION}" != "1" ]]; then
 if [[ `uname` == 'Darwin' ]];
 then
 	eval DYLD_FALLBACK_LIBRARY_PATH=$PREFIX/lib make check
 else
-if [[ "${CONDA_BUILD_CROSS_COMPILATION}" != "1" ]]; then
 	make check
 fi
 fi
