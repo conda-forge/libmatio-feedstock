@@ -18,6 +18,7 @@ build:
 requirements:
   build:
     - gnuconfig  # [unix]
+    - make  # [unix]
     - {{ compiler('c') }}
   host:
     - hdf5
