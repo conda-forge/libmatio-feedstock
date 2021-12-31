@@ -1,6 +1,3 @@
-:: Workaround since windows-2019 image is used
-choco install windows-sdk-8.1
-
 :: Configure
 set CONF=Release
 if "%ARCH%" == "32" (
