@@ -1,34 +1,20 @@
 :: Configure
 set CONF=Release
-if "%ARCH%" == "32" (
-  set SLN_PLAT=Win32
-) else (
-  set SLN_PLAT=x64
-)
-
-if "%VS_YEAR%" == "2017" (
-  set TOOLSET=v141
-  set SLN_FILE="visual_studio\matio.sln"
-)
-if "%VS_YEAR%" == "" (
-  echo Unknown VS version
-  exit 1
-)
 
 echo %LIBRARY_PREFIX%
 
 :: Build
-msbuild "%SLN_FILE%" ^
+msbuild "visual_studio\matio.sln" ^
   /p:Configuration=Release ^
-  /p:Platform=%SLN_PLAT% ^
-  /p:PlatformToolset=%TOOLSET% ^
+  /p:Platform=%CMAKE_GENERATOR_PLATFORM% ^
+  /p:PlatformToolset=%CMAKE_GENERATOR_TOOLSET% ^
   /property:HDF5_DIR=%LIBRARY_PREFIX%
 if errorlevel 1 exit 1
 
 :: Install
-copy %SRC_DIR%\visual_studio\%SLN_PLAT%\Release\libmatio.dll %LIBRARY_BIN%\
+copy %SRC_DIR%\visual_studio\%CMAKE_GENERATOR_PLATFORM%\Release\libmatio.dll %LIBRARY_BIN%\
 if errorlevel 1 exit 1
-copy %SRC_DIR%\visual_studio\%SLN_PLAT%\Release\libmatio.lib %LIBRARY_LIB%\
+copy %SRC_DIR%\visual_studio\%CMAKE_GENERATOR_PLATFORM%\Release\libmatio.lib %LIBRARY_LIB%\
 if errorlevel 1 exit 1
 copy %SRC_DIR%\src\matio.h %LIBRARY_INC%\
 if errorlevel 1 exit 1
