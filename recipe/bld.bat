@@ -12,9 +12,9 @@ msbuild "visual_studio\matio.sln" ^
 if errorlevel 1 exit 1
 
 :: Install
-copy %SRC_DIR%\visual_studio\%SLN_PLAT%\Release\libmatio.dll %LIBRARY_BIN%\
+copy %SRC_DIR%\visual_studio\%CMAKE_GENERATOR_PLATFORM%\Release\libmatio.dll %LIBRARY_BIN%\
 if errorlevel 1 exit 1
-copy %SRC_DIR%\visual_studio\%SLN_PLAT%\Release\libmatio.lib %LIBRARY_LIB%\
+copy %SRC_DIR%\visual_studio\%CMAKE_GENERATOR_PLATFORM%\Release\libmatio.lib %LIBRARY_LIB%\
 if errorlevel 1 exit 1
 copy %SRC_DIR%\src\matio.h %LIBRARY_INC%\
 if errorlevel 1 exit 1
