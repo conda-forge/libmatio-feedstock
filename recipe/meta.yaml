@@ -1,5 +1,5 @@
 {% set name = "libmatio" %}
-{% set version = "1.5.23" %}
+{% set version = "1.5.24" %}
 package:
   name: {{ name }}
   version: {{ version }}
@@ -7,10 +7,10 @@ package:
 source:
   fn: matio-{{ version }}.tar.gz
   url: https://github.com/tbeu/matio/releases/download/v{{ version }}/matio-{{ version }}.tar.gz
-  md5: 25dfaf33af030a170eb9d3814cac1fca
+  md5: 54aa14f6914c889364f9fc5f745d5ce2
 
 build:
-  number: 4
+  number: 0
   skip: true  # [win and (vc<14 or win32)]
   run_exports:
     - {{ pin_subpackage(name, max_pin='x.x.x') }}
