@@ -1,5 +1,5 @@
 {% set name = "libmatio" %}
-{% set version = "1.5.26" %}
+{% set version = "1.5.27" %}
 package:
   name: {{ name }}
   version: {{ version }}
@@ -7,7 +7,7 @@ package:
 source:
   fn: matio-{{ version }}.tar.gz
   url: https://github.com/tbeu/matio/releases/download/v{{ version }}/matio-{{ version }}.tar.gz
-  md5: ce86048575bb186be724815d806f2e50
+  md5: d9e55f091cbecbe988d4579a51c08776
 
 build:
   number: 0
@@ -20,6 +20,7 @@ requirements:
     - gnuconfig  # [unix]
     - make  # [unix]
     - {{ compiler('c') }}
+    - {{ stdlib("c") }}
   host:
     - hdf5
     - zlib
