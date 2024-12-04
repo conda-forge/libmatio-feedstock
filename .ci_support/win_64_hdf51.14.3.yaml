@@ -7,9 +7,9 @@ channel_sources:
 channel_targets:
 - conda-forge main
 hdf5:
-- 1.14.4
+- 1.14.3
 libmatio:
-- 1.5.27
+- 1.5.28
 target_platform:
 - win-64
 vc:

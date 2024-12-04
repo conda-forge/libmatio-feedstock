@@ -17,7 +17,7 @@ channel_targets:
 hdf5:
 - 1.14.4
 libmatio:
-- 1.5.27
+- 1.5.28
 macos_machine:
 - arm64-apple-darwin20.0.0
 target_platform:
