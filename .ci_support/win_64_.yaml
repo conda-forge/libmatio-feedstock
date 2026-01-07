@@ -9,7 +9,7 @@ channel_targets:
 hdf5:
 - 1.14.6
 libmatio:
-- 1.5.28
+- 1.5.29
 target_platform:
 - win-64
 vc:
