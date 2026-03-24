@@ -15,8 +15,8 @@ docker_image:
 hdf5:
 - 1.14.6
 libmatio:
-- 1.5.29
+- 1.5.30
 target_platform:
-- linux-aarch64
+- linux-ppc64le
 zlib:
 - '1'

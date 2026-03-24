@@ -13,10 +13,10 @@ channel_targets:
 docker_image:
 - quay.io/condaforge/linux-anvil-x86_64:alma9
 hdf5:
-- 1.14.6
+- '2'
 libmatio:
-- 1.5.29
+- 1.5.30
 target_platform:
-- linux-64
+- linux-ppc64le
 zlib:
 - '1'
