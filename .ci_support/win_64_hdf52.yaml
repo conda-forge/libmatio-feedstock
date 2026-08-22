@@ -1,0 +1,18 @@
+c_compiler:
+- vs2022
+c_stdlib:
+- vs
+channel_sources:
+- conda-forge
+channel_targets:
+- conda-forge main
+hdf5:
+- '2'
+libmatio:
+- 1.5.30
+target_platform:
+- win-64
+vc:
+- '14'
+zlib:
+- '1'
